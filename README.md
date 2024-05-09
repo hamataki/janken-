@@ -9,7 +9,7 @@
 ## ③DEMO
 
 デプロイしている場合はURLを記入（任意）
-https://github.com/hamataki/-.git
+https://hamataki.github.io/janken-app/
 
 ## ④作ったアプリケーション用のIDまたはPasswordがある場合
 
@@ -19,16 +19,19 @@ https://github.com/hamataki/-.git
 ## ⑤工夫した点・こだわった点
 
 - 画像を入れてみた
+- 勝った時に紙吹雪が出るようにした
 
 ## ⑥難しかった点・次回トライしたいこと(又は機能)
 
+- 初期状態がdisplay: noneになっていると、jQueryの.show()で表示させた後も、画面を動かさない限り見えない場合があり、苦戦した。
+  これはブラウザが#particles-js要素を表示した後、DOMの再描画が行われていないことが原因と考えられるらしい。
+  結果的にCSSトランジションを使って#particles-jsを徐々に表示させる方法で解決した。
 - 勝敗数を分かるようにしたい
 
 ## ⑦質問・疑問・感想、シェアしたいこと等なんでも
 
 - [質問]
 - [感想]
-表にplaceholderをつけると、書き込みしやすい
+  デプロイする時にMixed Content:～というエラーが出たが、解決策として『（’https:/ or ‘http:/）は省略できる』ということらしい。
 - [参考記事]
-  - 1. [URLをここに記入]
-  - 2. [URLをここに記入]
+  - 1. [https://qiita.com/yamato1491038/items/732a5fb78ec6b9be4f62]
